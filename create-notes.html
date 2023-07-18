@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create notes</title>
+    <link href="./main.css" rel="stylesheet"/>
+    <link href="./create-notes.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</head>
+<body>
+    <nav class="notes-navigation-bar">
+        <h2 class="notes-navigation-heading">Notes</h2>
+        <ul class="notes-navigation-link-list">
+            <li class="notes-navigation-link-item">
+                <a class="notes-navigation-link" href="./index.html">Home</a>
+            </li>
+            <li class="notes-navigation-link-item">
+                <a class="notes-navigation-link" href="./view-notes.html">View Notes</a>
+            </li>
+            <li class="notes-navigation-link-item">
+                <a href="./create-notes.html" class="notes-navigation-link notes-navigation-link-active">Create Notes</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="create-notes-heading">Create Notes</div>
+    <div class="create-notes-form">
+        <textarea class="create-notes-form-textarea" placeholder="write Notes...." id="note-text"></textarea>
+        <div>
+            <input class="create-notes-form-textbox" placeholder="write your name" type="text" width="100%">
+        </div>
+        <div  class="create-notes-form-button-wrap">
+            <button class="create-notes-form-button" id="author-text">Save Note</button>
+        </div>
+    </div>
+    <script src="./create-notes.js"></script>
+</body>
+</html>
